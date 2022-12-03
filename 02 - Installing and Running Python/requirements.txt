@@ -1,0 +1,11 @@
+notebook==6.0.3
+pytz==2019.3
+python-dateutil==2.8.1
+requests==2.22.0
+openpyxl==3.0.3
+xlrd==1.2.0
+numpy>=1.18
+scipy>=1.5
+pandas>=1.1
+matplotlib>=3.3
+mplfinance>=0.12.7a0

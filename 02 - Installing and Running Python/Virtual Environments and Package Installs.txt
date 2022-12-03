@@ -1,0 +1,71 @@
+Virtual Environments and Package Installs
+=========================================
+Please make sure that you have Python 3.8+ already properly installed on your machine.
+
+I will be using python3.9 when running Python, but if you choose to install another version, just use whichever version name you decided to use (e.g. python3.8).
+
+You should choose some base folder where you will:
+	- save the course materials
+	- create your virtual environment(s)
+	- save your Python code
+
+Let's say the path to this directory is <my_root>.
+
+Next, you should download the course materials, and save those materials in some folder in <my_root>, e.g. course_materials.
+
+
+
+Package Installations
+---------------------
+I decided to name my virtual environment py39_course. You can choose another name if you prefer.
+
+We can use the same virtual environment for the entire course, so only need to do the following steps once.
+
+1. Open a command prompt, and make sure to switch to the <my_root> directory
+
+2. Create the new virtual environment:
+		python3.9 -m venv py39_course
+
+3. Activate the new environment:
+		Mac/Linux: source py39_course/bin/activate
+		Windows: py39_course\Scripts\activate.bat
+
+4. In the shell (command prompt) where you just activated your environment, navigate to the course downloads for Section 2 - the folder that contains the file "requirements.txt"
+	
+5. We need to install the packages documented in that file, so now run this:
+   		pip install -r requirements.txt
+
+That's it, once pip has finished running your virtual environment is ready to be used. 
+You only need to do this once, unless you delete the virtual environment, in which case you just follow the same steps again.
+
+The next time you want to use this environment, you just need to activate it.
+
+If you want to see what packages have been installed in your environment, use
+		pip freeze
+
+But be careful, this will list not just the packages you installed, but also additional packages that were required by the packages you installed (so pip installs both the package you specify, and the required dependencies for that package)
+
+
+
+Manually Installing a Package
+-----------------------------
+If you want to manually install an additional package in your environment, just:
+	1. activate the environment
+	2. run the package installer with the specific package name (and optionally version)
+
+For example, you may want to install themes to use with your Jupyter notebooks later.
+
+I use a package located here: https://github.com/dunovank/jupyter-themes
+
+The documentation there says we can install these themes using this:
+		pip install jupyterthemes
+
+You can then list available themes from the command line:
+		jt -l
+
+And you can select a specific theme by name:
+		jt -t onedork
+
+There are other aspects of the Jupyter theme you can customize, as indicated in the package documentation (the URL I mention above).
+
+

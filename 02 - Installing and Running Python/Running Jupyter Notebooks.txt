@@ -1,0 +1,25 @@
+Running Jupyter Notebooks
+=========================
+
+From a command prompt:
+1. Navigate to your project root folder.
+2. Activate your virtual environment
+3. run Jupyter notebooks: jupyter notebook .
+4. If a web browser does not automatically open up, find the URL in the command prompt window (output when Jupyter starts up), and paste that URL into your browser.
+
+You can create Jupyter notebooks anywhere in your project folder - it does not have to be in the root of your project folder, you can create sub-folders and organize your notebooks however you want - just like you wold organize Excel or Word documents.
+
+Keyboard Shortcuts
+------------------
+- execute a cell: Shift+Enter
+- select current cell: Esc (or click on cell margin)
+- delete selected cell: DD (type D twice in succession)
+- change selected cell to Markup: M
+- change selected cell to Code: Y
+- save: S
+- insert cell above current selected cell: B
+- insert cell after currently selected cell: A
+
+Don't forget to re-run your Jupyter notebook when you re-load it later - this will just re-execute all the cells (but it will stop processing the cells if it encounters an error).
+
+Jupyter Notebook documentation: https://jupyter-notebook.readthedocs.io/en/stable/
