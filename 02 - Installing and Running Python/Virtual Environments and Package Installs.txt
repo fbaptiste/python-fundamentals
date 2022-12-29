@@ -2,7 +2,7 @@ Virtual Environments and Package Installs
 =========================================
 Please make sure that you have Python 3.8+ already properly installed on your machine.
 
-I will be using python3.9 when running Python, but if you choose to install another version, just use whichever version name you decided to use (e.g. python3.8).
+I will be using python3.9 when running Python, but if you choose to install another version, just use whichever version name you decided to use (e.g. python3.8, python3.10, etc).
 
 You should choose some base folder where you will:
 	- save the course materials
