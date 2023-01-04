@@ -1,0 +1,18 @@
+Note on Requirements File
+=========================
+
+Note that I have purposely omitted including numpy, pandas, matplotlib and mplfinance in the downloadable version of the `reuirements.txt` file.
+
+This is due to numerous issues encountered (primarily by Windows users) when installing numpy.
+
+The numpy package contains a lot of C code that needs to be compiled for your particular platform and python version. Usually these pre-compiled binaries are used when installing numpy, but, from time to time, what's available for installation for your platform may not match the version of numpy you are trying to install (either insalling an older pinned version, or installing the latest numpy).
+
+When that happens, pip install will try to compile these C modules using a local C compiler - and since by default these are not installed on many systems, the pip install will fail.
+
+The majority of this course does not require these libraries (just the last three sections of the course require them), so for a less bumpty start, it is simpler to simply not install them initially, and defer them to later.
+
+When you reach the sections that require these libraries, simply install them manually into your activated virtual environment, using the pip install commands I mention at the start of each section, e.g.
+pip install numpy
+pip install pandas
+etc.
+
