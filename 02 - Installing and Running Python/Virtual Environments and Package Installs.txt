@@ -23,8 +23,9 @@ We can use the same virtual environment for the entire course, so only need to d
 
 1. Open a command prompt, and make sure to switch to the <my_root> directory
 
-2. Create the new virtual environment:
-		python3.9 -m venv py39_course
+2. Create the new virtual environment (I use Python 3.9 here, but you can choose whatever you want here):
+		Mac/Linux: python3.9 -m venv py39_course
+		Windows: py -3.9 -m venv py39_course
 
 3. Activate the new environment:
 		Mac/Linux: source py39_course/bin/activate
