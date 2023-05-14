@@ -1,4 +1,4 @@
-notebook==6.0.3
+notebook
 pytz==2019.3
 python-dateutil==2.8.1
 requests==2.22.0
