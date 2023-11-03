@@ -1,6 +1,6 @@
 notebook
-pytz==2019.3
-python-dateutil==2.8.1
-requests==2.22.0
-openpyxl==3.0.3
-xlrd==1.2.0
+pytz
+python-dateutil
+requests
+openpyxl
+xlrd
